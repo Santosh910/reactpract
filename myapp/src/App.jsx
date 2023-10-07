@@ -15,6 +15,7 @@ import Ternary from './component/Practice/Ternary';
 import { useState } from 'react';
 import StyleComponent from './component/Practice/StyleComponent';
 import Counterse from './component/Practice/Counterse';
+import DynamicStyle from './component/Practice/DynamicStyle';
 
 function App() {
   const[loggedIn, setLoggedIn] = useState(false)
@@ -34,6 +35,7 @@ function App() {
       <Route exact path='/ternary' element={<Ternary IsUserLoggedIn={loggedIn} setLoggedIn={setLoggedIn}/>}/>
       <Route exact path='/stylecomponent' element={<StyleComponent/>}/>
       <Route exact path='/counterse' element={<Counterse/>}/>
+      <Route exact path='/dynamic-style' element={<DynamicStyle />}/>
      </Routes>
     </div>
   );

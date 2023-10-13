@@ -15,7 +15,7 @@ const AddProduct = () => {
         event.preventDefault();
         if (productData.name && productData.price && productData.image && productData.price > 0) {
             try {
-                const { data } = await axios.post("https://fakestoreapi.com/products", { title: productData.name, price: productData.price, image: productData.image })
+                const { data } = await axios.post("https://fakestoreapi.com/products", { title: productData.name, price: productData.price, image: productData.image }) 
                 console.log(data, "responce from post request")
                 toast.success("product added successfully , now add another product")
                 setProductData({ name: "", price: "", image: "" })

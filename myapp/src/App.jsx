@@ -22,6 +22,8 @@ import PageNotFound from './component/Practice/PageNotFound';
 import SingleProductNow from './component/Practice/SingleProductNow';
 import Products from './component/Practice/Products';
 import AddProduct from './component/Practice/AddProduct';
+import UseReducer from './component/Practice/UseReducer';
+import TestReducer from './component/Practice/TestReducer';
 
 function App() {
   const[loggedIn, setLoggedIn] = useState(false)
@@ -48,6 +50,8 @@ function App() {
       <Route exact path='/single-product/:id' element={<SingleProductNow/>}/>
       <Route exact path='/products' element={<Products/>}/>
       <Route exact path='/add-product' element={<AddProduct/>}/>
+      <Route exact path='/useReducer' element={<UseReducer/>}/>
+      <Route exact path='/testReducer' element={<TestReducer/>}/>
      </Routes>
     </div>
   ); 

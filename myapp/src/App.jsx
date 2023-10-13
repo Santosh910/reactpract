@@ -16,12 +16,19 @@ import { useState } from 'react';
 import StyleComponent from './component/Practice/StyleComponent';
 import Counterse from './component/Practice/Counterse';
 import DynamicStyle from './component/Practice/DynamicStyle';
+import ChildrenProp from './component/Practice/ChildrenProp';
+import Register2 from './component/Practice/Register2';
+import PageNotFound from './component/Practice/PageNotFound';
+import SingleProductNow from './component/Practice/SingleProductNow';
+import Products from './component/Practice/Products';
+import AddProduct from './component/Practice/AddProduct';
 
 function App() {
   const[loggedIn, setLoggedIn] = useState(false)
   return (
     <div className="App">
      <Routes>
+      <Route exact path='*' element={<PageNotFound/>}/>
       <Route exact path='/' element={<Homepage/>}/>
       <Route exact path='/login' element={<Login/>}/>
       <Route exact path='/register' element={<Register/>}/>
@@ -36,9 +43,14 @@ function App() {
       <Route exact path='/stylecomponent' element={<StyleComponent/>}/>
       <Route exact path='/counterse' element={<Counterse/>}/>
       <Route exact path='/dynamic-style' element={<DynamicStyle />}/>
+      <Route exact path='/children-prop' element={<ChildrenProp/>}/>
+      <Route exact path='/register2' element={<Register2/>}/>
+      <Route exact path='/single-product/:id' element={<SingleProductNow/>}/>
+      <Route exact path='/products' element={<Products/>}/>
+      <Route exact path='/add-product' element={<AddProduct/>}/>
      </Routes>
     </div>
-  );
+  ); 
 }
 
 export default App;

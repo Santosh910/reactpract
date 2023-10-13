@@ -7,7 +7,7 @@ const StyleComponent = () => {
     `
   return (
     <div>
-        <Button>StyleComponent</Button>
+        <Button >StyleComponent</Button>
     </div>
   ) 
 }

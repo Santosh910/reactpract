@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import './DynamicStyle.css'
 
 const DynamicStyle = () => {
-    const [isButtonActive,setIsButtonActive] = useState (false);
+    const [isButtonActive,setIsButtonActive] = useState (false );
     const handleButtonClick = () => {
         setIsButtonActive(!isButtonActive)
     }
